@@ -84,7 +84,6 @@ blockchain.gblock_hash()
 blockchain.block_adder({"data1": 1111, "data2": 2222})
 blockchain.block_adder({"data1": 3333, "data2": 4444})
 blockchain.validate_chain()
-print(str(blockchain.chainlist))
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
