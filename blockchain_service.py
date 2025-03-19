@@ -2,9 +2,11 @@ import time
 import json
 import sys
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 from modules.hasher import hash_block
 
 app = Flask(__name__)
+CORS(app)
 
 class BlockChain:
     def __init__(self): # allows to call the BlockChain class using the self param
